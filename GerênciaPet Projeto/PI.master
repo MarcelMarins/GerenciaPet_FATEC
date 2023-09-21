@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PI.master.cs" Inherits="PI" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server" style="height: 100%;">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="plugins/jsgrid/jsgrid.min.css">
+    <link rel="stylesheet" href="plugins/jsgrid/jsgrid-theme.min.css">
+    <link href="dist/css/meuEstilo.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="AdminLTE-3.2.0/plugins/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+        <nav class="main-header navbar navbar-expand navbar-success navbar-light navbar_cima">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="pag1.aspx" class="nav-link text-white">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ajuda</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Suporte Técnico</a>
+                        <a class="dropdown-item" href="#">Verificar Atualizações</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Configurações</a>
+                        <a class="dropdown-item" href="#">Meu Perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sair</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <div class="user-panel d-flex pr-3">
+                        <div class="info">
+                            <a href="#" class="d-block text-white mr-0">Usuário Administrador</a>
+                        </div>
+                        <div class="image">
+                            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- -->
+
+        <!-- -->
+
+        <!-- -->
+
+        <aside class="main-sidebar sidebar elevation-4 navbar_lateral">
+
+            <a href="#" class="brand-link text-center pb-0">
+                <img src="dist/img/l5.png" class="elevation-3 img-fluid rounded-circle mb-2 imagem_navbar" style="height: 100px;">
+                <h4 class="brand-text font-weight-light text-white mb-0"><strong>Gerência</strong>PET</h4>
+            </a>
+
+            <div class="sidebar">
+                <nav>
+                    <hr>
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                        <li class="nav-item active card fundo_verde">
+                            <a href="venda_balcao.aspx" class="nav-link">
+                                <i class="nav-icon fa fa-shopping-cart text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Venda Balcão
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item active card mt-2 fundo_verde">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa  fa-calendar text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Agendamentos
+                                </p>
+                            </a>
+                        </li>
+
+                        <div class="container">
+                            <hr>
+                        </div>
+
+                        <li class="nav-item active card fundo_verde">
+                            <a href="clientes.aspx" class="nav-link">
+                                <i class="nav-icon fa fa-users text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Clientes
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item active card mt-2 fundo_verde">
+                            <a href="fornecedor.aspx" class="nav-link">
+                                <i class="nav-icon fa fa-truck text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Fornecedores
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item active card mt-2 fundo_verde">
+                            <a href="produtos.aspx" class="nav-link">
+                                <i class="nav-icon fa fa-archive text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Produtos
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item active card mt-2 fundo_verde">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-address-book text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Usuários
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <div class="container">
+                            <hr>
+                        </div>
+
+                        <li class="nav-item active card fundo_verde">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-archive text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Estoque
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item active card mt-2 fundo_verde">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-list text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Caixa
+                                </p>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item active card mt-2 fundo_verde">
+                            <a href="pagamentos.aspx" class="nav-link">
+                                <i class="nav-icon fa fa-credit-card text-white" aria-hidden="true"></i>
+                                <p style="color: white;">
+                                    Taxas
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <br>
+                </nav>
+            </div>
+
+        </aside>
+
+        <div class="content-wrapper" style="min-height: 1172.8px; background-color: #F2F2F2">
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+
+        <footer class="main-footer" style="background-color: #14230C; border-color: #14230C;">
+            <div class="float-right d-none d-sm-inline">
+                v6.0.0
+            </div>
+            <i><strong>GerênciaPET© 2020-2022.</strong> Todos os direitos reservados!</i>
+        </footer>
+        <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="dist/js/adminlte.min.js"></script>
+        <script src="plugins/jsgrid/demos/db.js"></script>
+        <script src="plugins/jsgrid/jsgrid.min.js"></script>
+    </form>
+</body>
+</html>
